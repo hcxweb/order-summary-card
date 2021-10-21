@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #e0e8ff;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 45rem;
+    height: 69.7rem;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.15);
+    border-radius: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+h1 {
+    position: absolute;
+    top: 38.02%;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #1f2e55;
+}
+
+p {
+    width: 78.67%;
+    text-align: center;
+    position: absolute;
+    top: 45.77%;
+    line-height: 2.6rem;
+    color: #717fa6;
+}
+
+.plan {
+    width: 78.67%;
+    height: 9.8rem;
+    top: 59.83%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #f7f9ff;
+    border-radius: 1.1rem;
+}
+
+.music-icon {
+    position: absolute;
+    left: 7%;
+}
+
+.plan-details {
+    width: 9.2rem;
+    height: 4.8rem;
+    position: absolute;
+    left: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-type {
+    font-weight: 900;
+    color: #1f2e55;
+}
+
+.plan-price {
+    color: #717fa6;
+}
+
+.plan-change {
+    width: 5.2rem;
+    height: 1.9rem;
+    position: absolute;
+    right: 7%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #382ae1;  
+    transition: .3s;
+}
+
+.plan-change:hover {
+    color: #766cf1;
+}
+
+.btn {
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+.btn-pay {
+    width: 78.67%;
+    height: 5rem;
+    position: absolute;
+    top: 78.48%;
+    color: #fff;
+    background-color: #382ae1;
+    box-shadow: 0 1rem 2rem 0 rgba(56, 42, 225, .25);
+    border-radius: 1.1rem;
+}
+
+.btn-pay:hover {
+    background-color: #766cf1;
+}
+
+.btn-cancel {
+    width: 21.33%;
+    height: 2rem;
+    position: absolute;
+    top: 90.24%;
+    color: #717fa6;
+    background: none;
+}
+
+.btn-cancel:hover {
+    color: #1f2e55;
+}
+
+
+/*** media query ***/
+@media(max-width: 31.25em) {
+    
+    body {
+        font-size: 1.5rem;
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    main {
+        width: 32.7rem;
+        height: 56.7rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        top: 33.86%;
+    }
+
+    p {
+        width: 80.43%;
+        top: 41.80%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .plan,
+    .btn-pay,
+    .btn-cancel {
+        width: 85.32%;
+    }
+
+    .plan {
+        top: 59.26%;
+        height: 8.1rem;
+    }
+
+    .plan-details {
+        left: 30%;
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+    }
+
+    .plan-change {
+        right: 5%;
+        font-size: 1.3rem;
+    }
+
+    .btn-pay {
+        top: 77.78%;
+        box-shadow: 0 1.5rem 2rem 0 rgba(56, 42, 225, .25);
+    }
+
+    .btn-cancel {
+        top: 90.83%;
+    }
+}
